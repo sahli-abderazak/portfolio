@@ -1,6 +1,6 @@
-
-import { Calendar, MapPin, GraduationCap, Badge } from "lucide-react"
+import { Calendar, MapPin, GraduationCap } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { Badge } from "./ui/badge"
 
 export function EducationSection() {
   const education = [
@@ -40,7 +40,6 @@ export function EducationSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Formation & Éducation</h2>
           <p className="text-lg text-gray-600">Mon parcours académique et mes formations professionnelles</p>
         </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Diplômes */}
           <div>
@@ -74,7 +73,6 @@ export function EducationSection() {
               ))}
             </div>
           </div>
-
           {/* Formations */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Formations Professionnelles</h3>
@@ -91,7 +89,6 @@ export function EducationSection() {
                 </Card>
               ))}
             </div>
-
             {/* Expérience associative */}
             <div className="mt-8">
               <h4 className="text-xl font-bold text-gray-900 mb-4">Expérience Associative</h4>

@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
-
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -12,6 +11,7 @@ export function Navigation() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
     }
+
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -49,7 +49,10 @@ export function Navigation() {
           </div>
 
           {/* Mobile Navigation Button */}
-          <button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
