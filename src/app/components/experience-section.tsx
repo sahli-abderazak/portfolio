@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
-import { Badge } from "../components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
+import { Badge } from "./ui/badge"
 import { Calendar, MapPin } from "lucide-react"
 
 export function ExperienceSection() {
@@ -46,9 +46,10 @@ export function ExperienceSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Expérience Professionnelle</h2>
-          <p className="text-lg text-gray-600">Mon parcours professionnel et les projets sur lesquels j'ai travaillé</p>
+          <p className="text-lg text-gray-600">
+            {"Mon parcours professionnel et les projets sur lesquels j'ai travaillé"}
+          </p>
         </div>
-
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow duration-300">

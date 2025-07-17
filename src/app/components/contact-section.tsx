@@ -51,15 +51,13 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contactez-moi</h2>
           <p className="text-lg text-gray-600">
-            N'hésitez pas à me contacter pour discuter de vos projets ou opportunités
+            {"N'hésitez pas à me contacter pour discuter de vos projets ou opportunités"}
           </p>
         </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Informations de contact */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Restons en Contact</h3>
-
             <div className="space-y-6 mb-10">
               {contactInfo.map((info, index) => (
                 <div key={index} className="group">
@@ -80,7 +78,6 @@ export function ContactSection() {
                 </div>
               ))}
             </div>
-
             <div>
               <h4 className="text-xl font-bold text-gray-900 mb-6">Réseaux Sociaux</h4>
               <div className="flex gap-4">
@@ -97,7 +94,6 @@ export function ContactSection() {
               </div>
             </div>
           </div>
-
           {/* Formulaire de contact */}
           <Card className="shadow-2xl border-0 overflow-hidden">
             <CardHeader className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
@@ -166,7 +162,6 @@ export function ContactSection() {
           </Card>
         </div>
       </div>
-
       {/* Footer modernisé */}
       <div className="mt-20 pt-8 border-t border-gray-200">
         <div className="text-center">
