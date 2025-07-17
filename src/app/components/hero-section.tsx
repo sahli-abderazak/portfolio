@@ -9,7 +9,7 @@ export function HeroSection() {
           <div className="mb-8">
             <div className="relative w-40 h-40 mx-auto mb-8">
               <Image
-                src="/placeholder.svg?height=160&width=160"
+                src="/profile-photo.jpg"
                 alt="Abderazak SAHLI"
                 fill
                 className="rounded-full object-cover border-4 border-white shadow-2xl"
